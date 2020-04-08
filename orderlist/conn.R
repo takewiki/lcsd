@@ -1,0 +1,5 @@
+library(RJDBC)
+drv <- JDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","/opt/jdbc/mssql-jdbc-7.2.2.jre8.jar")
+conn <- dbConnect(drv, "jdbc:sqlserver://115.159.201.178:1433;databaseName=lcdb", "sa", "Hoolilay889@")
+#data <- dbGetQuery(conn,'select top 10 FBarcode,FChartNumber,FBillNo from takewiki_mo_barcode')
+#View(data)
