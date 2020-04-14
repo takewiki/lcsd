@@ -1,14 +1,18 @@
 ## global.R ##
 # 加载R包-----
 enableBookmarking(store = "url")
+library(DTedit)
 library(shiny);
 library(shinydashboard);
 library(tsda);
 library(tsdo);
 library(tsui);
+library(shinyalert);
+DTeditCn::setDTtoCn()
 
 # 设置引入页-----
 source('00_data.R',encoding = 'utf-8');
+source('00_conn.R',encoding = 'utf-8');
 source('topbarMenu.R',encoding = 'utf-8');
 source('sideBarSetting.R',encoding = 'utf-8');
 source('01_row_body.R',encoding = 'utf-8');
@@ -18,7 +22,7 @@ source('04_series_body.R',encoding = 'utf-8');
 source('05_majority_body.R',encoding = 'utf-8');
 source('06_tutor_body.R',encoding = 'utf-8');
 source('99_sysSetting_body.R',encoding = 'utf-8');
-source('workAreaSetting.R',encoding = 'utf-8');
+source('workAreaSetting.R',encoding = 'utf-8')
 
 
 
